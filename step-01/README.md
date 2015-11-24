@@ -2,9 +2,9 @@
 
 TODO
 
-# Create the Google Sheet
+# Create the GoogleSheet
 
-Create a Google Sheet as follow
+Create a GoogleSheet as follow
 
 FIXME add screenshot
 
@@ -35,12 +35,12 @@ Once the Entity Store is created, let's create an entity:
 
 FIXME add a screenshot
 
-# Create a WebAPI
+# Create a Web API
 
 Create a Web API:
 
 - type: **Full stack**
-- name: ** Poll API**
+- name: **Poll API**
 - domain: *any name that doesn't collide with other participants (eg. your github username prefixed with pollworkshop)*
 
 FIXME add a screenshot
