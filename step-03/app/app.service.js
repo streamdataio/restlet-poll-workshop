@@ -16,7 +16,6 @@
       }
     };
   };
-
   angular
     .module('PollApp')
     .factory('apiSparkInterceptor', ['POLL_CONFIG', '$q', apiSparkInterceptor]);

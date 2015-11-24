@@ -4,7 +4,7 @@
 
   function pollService($resource) {
 
-    var questionsAPI = $resource('https://pollapi-allan.apispark.net/v1/questions');
+    var questionsAPI = $resource('[YOUR_QUESTION_API]');
 
     function getQuestions() {
       return questionsAPI.query().$promise;
@@ -14,7 +14,6 @@
       getQuestions: getQuestions
     }
   }
-
   angular
     .module('PollApp')
     .factory('pollService', ['$resource', pollService]);

@@ -13,7 +13,6 @@
 
     init();
   }
-
   angular
     .module('PollApp')
     .controller('PollAppController', ['$scope', '$resource', 'pollService', PollAppController]);
