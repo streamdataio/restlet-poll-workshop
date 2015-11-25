@@ -2,7 +2,7 @@
 
 (function() {
 
-  function pollService($resource) {
+  function pollService(POLL_CONFIG, $resource) {
 
     function getQuestions() {
       //FIXME Step#2 Use $resource to return a $promise of questions
@@ -15,6 +15,6 @@
 
   angular
     .module('PollApp')
-    .factory('pollService', ['$resource', pollService]);
+    .factory('pollService', ['POLL_CONFIG', '$resource', pollService]);
 
 })();

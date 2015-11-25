@@ -2,9 +2,9 @@
 
 (function() {
 
-  function pollService($resource) {
+  function pollService(POLL_CONFIG, $resource) {
 
-    var questionsAPI = $resource('[YOUR_QUESTION_API]');
+    var questionsAPI = $resource(POLL_CONFIG.apiSparkBaseURL +'/questions');
 
     function getQuestions() {
       return questionsAPI.query().$promise;
@@ -16,6 +16,6 @@
   }
   angular
     .module('PollApp')
-    .factory('pollService', ['$resource', pollService]);
+    .factory('pollService', ['POLL_CONFIG', '$resource', pollService]);
 
 })();
