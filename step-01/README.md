@@ -45,7 +45,7 @@ Create a Web API:
 
 FIXME add a screenshot
 
-Once created, go to the Settings tab, and click on “Add” in the “Imports” panel on the left side, so as to import your two data stores: the Google Sheets with our questions and answers, and the Entity Store for the votes collection:
+Once created, go to the “Settings” tab, and click on “Add” in the “Imports” panel on the left side, so as to import your two data stores: the Google Sheets with our questions and choices, and the Entity Store for the votes collection:
 
 FIXME add screenshot
 
@@ -68,7 +68,7 @@ curl --request GET --url https://pollapi-allan.apispark.net/v1/questions/ \
 
 You should get something like that:
 ```
-[{"id":"1","question":"What is your favorite      programming language ?",
+[{"id":"1","question":"What is your favorite programming language ?",
   "total_options":"5",
   "answer_1":"Javascript",
   "answer_2":"Java",
