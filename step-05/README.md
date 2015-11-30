@@ -17,9 +17,9 @@ FIXME add a screenshot
              {"label":"C/C++","value":0},
              {"label":"Python","value":0} ] }
 ```
-4. Edit `chart.directive.js` and implement `createBarChart(chartId, data)` function. **HINT:** Refer to [nvd3 documentation](http://nvd3.org/examples/discreteBar.html) for Help.
-5. Then, implement `updateBarChart(data)` function. **HINT:** Refer to this [stackoverflow topic](http://stackoverflow.com/questions/24689157/nvd3-how-to-refresh-the-data-function-to-product-new-data-on-click) for help
-6. Finally, edit you `index.html` to add a reference to the `BarChart` directive with proper params.
+4. Edit `chart.directive.js` and implement `createBarChart(chartId, data)` function. **HINT:** Refer to [nvd3 documentation](http://nvd3.org/examples/discreteBar.html) for help.
+5. Then, implement `updateBarChart(data)` function. **HINT:** Refer to this [stackoverflow topic](http://stackoverflow.com/questions/24689157/nvd3-how-to-refresh-the-data-function-to-product-new-data-on-click) for help.
+6. Finally, edit the `index.html` to add a reference to the `BarChart` directive with proper params.
 
 ## Summary
 Now that we have displayed vote's results in a Bar Chart, let's see how to update chart in realtime using Streamdata.io, Go to [step-06](../step-06/).
