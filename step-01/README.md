@@ -6,7 +6,7 @@ Sign in to API Spark (http://restlet.com/products/apispark/#)
 
 Create a GoogleSheet as follow:
 
-![Screenshot](/img/step-01-googlesheet.png)  
+![Screenshot](/img/step-01-googlesheet.png)
 
 # Create a Google Wrapper Entity Store for the question and the possible answer
 
@@ -76,3 +76,6 @@ You should get something like that:
   "answer_4":"C/C++",
   "answer_5":"Python"}]
 ```
+
+# Summary
+We have created and deployed our backend APIs. To start implementing the client app, go to [step-02](./step-02/).
