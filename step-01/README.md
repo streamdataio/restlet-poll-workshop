@@ -1,12 +1,12 @@
 # Create a Restlet account
 
-TODO
+Sign in to API Spark (http://restlet.com/products/apispark/#)
 
 # Create the GoogleSheet
 
-Create a GoogleSheet as follow
+Create a GoogleSheet as follow:
 
-FIXME add screenshot
+![Screenshot](/img/step-01-googlesheet.png)  
 
 # Create a Google Wrapper Entity Store for the question and the possible answer
 
@@ -16,7 +16,7 @@ In APISpark, create an Entity Store with
 - type: **Google Sheets Wrapper**
 - spreadsheet: *choose the spreadsheet created in the previous section*
 
-FIXME add screenshots
+![Screenshot](/img/step-01-entitystore-googlesheet.png)
 
 # Create a FullStack Entity Store for the votes
 
@@ -25,7 +25,7 @@ In APISpark, create an Entity Store with
 - name: **Poll Results**
 - type: **Full stack**
 
-FIXME add screenshots
+![Screenshot](/img/step-01-entitystore-fullstack.png)
 
 Once the Entity Store is created, let's create an entity:
 
@@ -33,7 +33,7 @@ Once the Entity Store is created, let's create an entity:
 - Add the entity **Vote**
 - By clicking on the little plus signs on the Vote entity, in the Entities pane, you’ll be able to add properties to that entity. We’ll create 5 properties for the (up to) 5 possible answers to our questions:
 
-FIXME add a screenshot
+![Screenshot](/img/step-01-entitystore-properties.png)
 
 # Create a Web API
 
@@ -43,15 +43,15 @@ Create a Web API:
 - name: **Poll API**
 - domain: *any name that doesn't collide with other participants (eg. your github username prefixed with pollworkshop)*
 
-FIXME add a screenshot
+![Screenshot](/img/step-01-webapi.png)
 
 Once created, go to the “Settings” tab, and click on “Add” in the “Imports” panel on the left side, so as to import your two data stores: the Google Sheets with our questions and choices, and the Entity Store for the votes collection:
 
-FIXME add screenshot
+![Screenshot](/img/step-01-webapi-import-cell.png)
 
 When both data stores are imported, if you go back to the “Overview” pane of your API, you can see our resources available:
 
-FIXME add screenshot
+![Screenshot](/img/step-01-webapi-ressources.png)
 
 One last click on the “Deploy” button to make your API live!
 
@@ -59,7 +59,7 @@ One last click on the “Deploy” button to make your API live!
 
 Open a terminal and run:
 ```
-curl --request GET --url https://pollapi-allan.apispark.net/v1/questions/ \
+curl --request GET --url https://[YOUR_API_DOMAIN].apispark.net/v1/questions/ \
    --header 'accept: application/json' \
    --header 'authorization: Basic [YOUR_API_TOKEN]' \
    --header 'content-type: application/json' \
