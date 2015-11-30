@@ -36,4 +36,4 @@ To do so, use the [$resource](https://docs.angularjs.org/api/ngResource/service/
 3. Implement the `test()` method of the `PollAppController` to log the question and choices into the console.
 
 # Summary
-We have done an app skeleton able to fetch data from API Spark. To enable user to vote based on the possible choices, go to [step-03](./step-03/).
+We have done an app skeleton able to fetch data from API Spark. To enable user to vote based on the possible choices, go to [step-03](../step-03/).

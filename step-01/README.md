@@ -78,4 +78,4 @@ You should get something like that:
 ```
 
 # Summary
-We have created and deployed our backend APIs. To start implementing the client app, go to [step-02](./step-02/).
+We have created and deployed our backend APIs. To start implementing the client app, go to [step-02](../step-02/).
