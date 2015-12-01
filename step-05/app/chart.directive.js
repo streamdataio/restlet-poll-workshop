@@ -25,13 +25,12 @@ function barsChart() {
     }
 
     function createBarChart(chartId, data) {
-      // FIXME see http://nvd3.org/examples/discreteBar.html
+      // FIXME Step05 - see http://nvd3.org/examples/discreteBar.html
       // WARNING: use the global chart and chartData already declared in the directive!
-
     }
 
     function updateBarChart(data) {
-      // FIXME see http://stackoverflow.com/questions/24689157/nvd3-how-to-refresh-the-data-function-to-product-new-data-on-click
+      // FIXME Step05 - see http://stackoverflow.com/questions/24689157/nvd3-how-to-refresh-the-data-function-to-product-new-data-on-click
     }
 
     return {
