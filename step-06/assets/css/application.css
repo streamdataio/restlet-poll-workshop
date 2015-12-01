@@ -1,18 +1,9 @@
-.bar {
-  fill: steelblue;
+img {
+    vertical-align: middle;
+    margin: 20px;
 }
 
-.axis text {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.x.axis path {
-  display: none;
+.header-title {
+    font-style:normal;
+    font-family: "Arial", sans-serif;
 }
