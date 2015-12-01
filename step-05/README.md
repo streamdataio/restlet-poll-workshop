@@ -2,8 +2,6 @@
 
 In this step, you will display the poll results.
 
-FIXME add a screenshot
-
 ## What I must do?
 
 1. Backport your `app.js` from the previous step into this one.
