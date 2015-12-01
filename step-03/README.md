@@ -9,3 +9,4 @@ In this step, you will display the list of choices for the question.
 3. Display the list of choices and the label of the question in the `index.html`. A choice can be implemented as a button.
 
 ## Summary
+Now that we display a list of choice, let's allow user to vote. Go to [step-04](../step-04/).
