@@ -7,7 +7,7 @@
       request: function (config) {
         config.headers = config.headers || {};
 
-        var authorization = 'Basic ' + btoa(POLL_CONFIG.apiSparkLogin + ':' + POLL_CONFIG.apiSparkPassword);
+        var authorization = 'Basic ' + POLL_CONFIG.apiSparkToken;
         config.headers['Authorization'] = authorization;
         return config;
       },
@@ -16,6 +16,7 @@
       }
     };
   };
+
   angular
     .module('PollApp')
     .factory('apiSparkInterceptor', ['POLL_CONFIG', '$q', apiSparkInterceptor]);
