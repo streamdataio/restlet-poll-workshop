@@ -4,15 +4,13 @@ Sign in to API Spark (http://restlet.com/products/apispark/#)
 
 # Create the GoogleSheet
 
-Create a GoogleSheet as follow:
+Create a GoogleSheet with following cols and rows:
+
+| id  | question | total_options | choice_1 | choice_2 | choice_3 | choice_4 | choice_5 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | What is your favorite programming language ? | 5 | Javascript | Java | Ruby | C/C++ | Python |
 
 ![Screenshot](/img/step-01-googlesheet.png)
-
-Here a table for an easy copy/paste:
-
-| id | question                                     | total_options | choice_1   | choice_2  | choice_3 | choice_4 | choice_5 |
-| -- | -------------------------------------------- | ------------- | ---------- | --------- | -------- | -------- | -------- |
-| 1  | What is your favorite programming language ? | 5             | Javascript | Java      | Ruby     | C/C++    | Python   |
 
 1	What is your favorite programming language ?	5	Javascript	Java	Ruby	C/C++	Python
 
