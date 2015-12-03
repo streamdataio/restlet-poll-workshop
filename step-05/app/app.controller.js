@@ -27,7 +27,7 @@
     }
 
     vm.getVotes = function() {
-      // FIXME Step-05
+      // TODO Step-05
       vm.votes[0] = { "key":"Simulated Vote Results",
                       "values":[{"label":"Javascript","value":14},
                                 {"label":"Java","value":16},

@@ -3,7 +3,7 @@
 (function () {
 
   function PollAppController($scope, $resource, pollService) {
-    
+
     var vm = this;
     vm.question = {label: "", choices:[]};
     vm.results = [];
@@ -21,7 +21,7 @@
     };
 
     vm.vote = function(choiceIndex) {
-      // FIXME Step#4 add the code to vote
+      // TODO Step#4 add the code to vote
     }
 
     init();

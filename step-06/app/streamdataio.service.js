@@ -7,7 +7,7 @@
       var authorization = 'Basic ' + POLL_CONFIG.apiSparkToken;
       var headers = ['Authorization: ' + authorization];
 
-      //FIXME Step-06 - Use Streamdata.io SDK to return a EventSource on Votes API.
+      //TODO Step-06 - Use Streamdata.io SDK to return a EventSource on Votes API.
     }
 
     return {

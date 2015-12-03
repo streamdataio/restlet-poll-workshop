@@ -6,7 +6,7 @@
     var vm = this;
 
     vm.test = function() {
-    	//FIXME Step-02 - Use PollService to log the list of questions in the console
+    	//TODO Step-02 - Use PollService to log the list of questions in the console
     };
   }
 

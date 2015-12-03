@@ -3,12 +3,12 @@
 (function () {
 
   function PollAppController($scope, $resource, pollService) {
-    
+
     var vm = this;
     vm.question = {label: "", choices:[]};
 
     function init() {
-        //FIXME Populate question object with question label and list of possible choices
+        //TODO Populate question object with question label and list of possible choices
     };
 
     init();

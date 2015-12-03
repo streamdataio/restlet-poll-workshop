@@ -5,7 +5,7 @@
   function pollService(POLL_CONFIG, $resource) {
 
     function getQuestions() {
-      //FIXME Step#2 Use $resource to return a $promise of questions
+      //TODO Step#2 Use $resource to return a $promise of questions
     }
 
     return {

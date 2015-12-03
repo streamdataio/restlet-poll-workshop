@@ -25,7 +25,7 @@
   }
 
   vm.getVotes = function() {
-    /* FIXME Step-06 - Change implementation in order to use streamdataioVotesFactory
+    /* TODO Step-06 - Change implementation in order to use streamdataioVotesFactory
        and register to proper callbacks */
 
     var results = pollService.getVotes().then(function(results) {

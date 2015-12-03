@@ -6,12 +6,12 @@
 
     var questionsAPI = $resource(POLL_CONFIG.apiSparkBaseURL + '/questions');
 
-    function getQuestions() { 
+    function getQuestions() {
       return questionsAPI.query().$promise;
     }
 
     function vote(choiceIndex) {
-      // FIXME Step#4 add the code to vote
+      // TODO Step#4 add the code to vote
     }
 
     return {
