@@ -8,6 +8,14 @@ Create a GoogleSheet as follow:
 
 ![Screenshot](/img/step-01-googlesheet.png)
 
+Here a table for an easy copy/paste:
+
+| id | question                                     | total_options | choice_1   | choice_2  | choice_3 | choice_4 | choice_5 |
+| -- | -------------------------------------------- | ------------- | ---------- | --------- | -------- | -------- | -------- |
+| 1  | What is your favorite programming language ? | 5             | Javascript | Java      | Ruby     | C/C++    | Python   |
+
+1	What is your favorite programming language ?	5	Javascript	Java	Ruby	C/C++	Python
+
 **Important:** Rename the sheet to "question" as it will be used by APISpark to name the API endpoint.
 
 # Create a Google Wrapper Entity Store for the question and the possible answer
