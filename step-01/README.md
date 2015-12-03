@@ -8,6 +8,8 @@ Create a GoogleSheet as follow:
 
 ![Screenshot](/img/step-01-googlesheet.png)
 
+**Important:** Rename the sheet to "question" as it will be used by APISpark to name the API endpoint.
+
 # Create a Google Wrapper Entity Store for the question and the possible answer
 
 In APISpark, create an Entity Store with
@@ -17,6 +19,8 @@ In APISpark, create an Entity Store with
 - spreadsheet: *choose the spreadsheet created in the previous section*
 
 ![Screenshot](/img/step-01-entitystore-googlesheet.png)
+
+Once your Entity Store is successfully created, click on the green **Deploy** button.
 
 # Create a FullStack Entity Store for the votes
 
@@ -31,9 +35,15 @@ Once the Entity Store is created, let's create an entity:
 
 - In the overview, click on the button **Add**
 - Add the entity **Vote**
-- By clicking on the little plus signs on the Vote entity, in the Entities pane, you’ll be able to add properties to that entity. We’ll create 5 properties for the (up to) 5 possible answers to our questions:
+- Vote entity should be created with a default attribute named `id` representing its primary key. Click on the `id` property to change its properties. Set **Value policy** to **Specified at creation** and **type** to **Integer** as follow:
+
+![Screenshot](/img/step-01-entitystore-pk.png)
+
+- Then, click on the little plus signs of the Vote entity to add additional properties. We’ll create 5 properties for the (up to) 5 possible answers to our questions:
 
 ![Screenshot](/img/step-01-entitystore-properties.png)
+
+Once your Entity Store is successfully created and configured, click on the green **Deploy** button.
 
 # Create a Web API
 
@@ -53,20 +63,15 @@ When both data stores are imported, if you go back to the “Overview” pane of
 
 ![Screenshot](/img/step-01-webapi-ressources.png)
 
-One last click on the “Deploy” button to make your API live!
+One last click on the **Deploy** button to make your API live!
 
 # Test the APIs with curl
 
-Open a terminal and run:
-```
-curl --request GET --url https://[YOUR_API_DOMAIN].apispark.net/v1/questions/ \
-   --header 'accept: application/json' \
-   --header 'authorization: Basic [YOUR_API_TOKEN]' \
-   --header 'content-type: application/json' \
-   --header 'host: [YOUR_API_DOMAIN].apispark.net'
-```
+You can now test your APIs. To do so, select an API under the **Resources** section of your WebAPI, an example of curl command will be displayed:
 
-You should get something like that:
+![Screenshot](/img/step-01-webapi-test.png)
+
+Open a terminal and run the curl command. You should get something like that:
 ```
 [{"id":"1","question":"What is your favorite programming language ?",
   "total_options":"5",
