@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="PollApp">
+<head>
+    <title>Poll</title>
+    <link rel="stylesheet" href="assets/css/application.css">
+    <link href='assets/css/nv.d3.min.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<body>
+
+<div id="wrapper">
+    <header>
+        <h1 class="header-title">Poll Workshop</h1>
+    </header>
+
+    <div id="content" ng-controller="PollAppController as pollCtrl">
+        <h2>{{pollCtrl.question.label}}</h2>
+
+        <div class="container">
+          <span class="inner" ng-repeat="choice in pollCtrl.question.choices">
+              <button ng-click="pollCtrl.vote($index)">{{choice}}</button>
+          </span>
+        </div>
+        <bars-chart chart-id="pollChart" data="pollCtrl.votes"></bars-chart>
+    </div>
+    <footer class="container">
+      <img class="inner" src="assets/img/streamdata_logo.png" height="80px"/>
+      <img class="inner" src="assets/img/apispark_logo.png" height="30px"/>
+    </footer>
+</div>
+
+<script src="assets/lib/angular.js"></script>
+<script src="assets/lib/angular-resource.js"></script>
+<script src="assets/lib/angular-sanitize.js"></script>
+<script src="assets/lib/streamdataio.min.js"></script>
+<script src="assets/lib/json-patch-duplex.min.js"></script>
+<script src="assets/lib/d3.js"></script>
+<script src="assets/lib/nv.d3.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/app.service.js"></script>
+<script src="app/app.controller.js"></script>
+<script src="app/poll.service.js"></script>
+<script src="app/streamdataio.service.js"></script>
+<script src="app/chart.directive.js"></script>
+</body>
+</html>

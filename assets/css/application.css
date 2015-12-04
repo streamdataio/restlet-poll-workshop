@@ -1,0 +1,19 @@
+img {
+    vertical-align: middle;
+    margin: 20px;
+}
+
+.header-title {
+    font-style:normal;
+    font-family: "Arial", sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.inner {
+  display: inline-block;
+  position: relative;
+  margin: 30px 10px 50px 10px;
+}
